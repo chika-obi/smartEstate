@@ -1,0 +1,76 @@
+.how-it-works {
+  padding: 100px 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.step-item {
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.step-item h3 {
+  font-size: 1.3rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.step-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Connector line between steps */
+.connector {
+  width: 60px;
+  height: 4px;
+  background-color: #00bcd4;
+  margin: 0 -30px; /* overlap edges of cards */
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .steps-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .connector {
+    width: 4px;
+    height: 40px;
+    margin: -20px 0; /* vertical spacing between cards */
+  }
+}

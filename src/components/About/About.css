@@ -1,0 +1,61 @@
+/* About.css */
+.about {
+  padding: 100px 50px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+}
+
+/* Feature Cards */
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  width: 280px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
